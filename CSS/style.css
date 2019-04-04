@@ -3,6 +3,10 @@
 
     font-family: 'Lato', sans-serif;
 */
+* {
+   box-sizing: border-box;
+}
+
 ul {
    list-style: none;
 }
@@ -14,6 +18,12 @@ a {
 .body {
    font-size: 16px;
    font-family: font-family: 'Lato', sans-serif;
+   background-color: #fafcfc;
+}
+
+.wrapper {
+   background-color: #fafcfc;
+   ;
 }
 
 .top--header {
@@ -23,13 +33,14 @@ a {
    -ms-flex-pack: distribute;
    -webkit-box-pack: start;
    justify-content: flex-start;
-   max-width: 1500px;
+   max-width: 1170px;
    margin: auto;
    -webkit-box-align: center;
    -ms-flex-align: center;
    align-items: center;
    border-bottom: 1px solid #ebebeb;
-   padding: 25px 15px;
+   padding: 25px 30px 15px 15px;
+   background-color: #fafcfc;
 }
 
 .top--logo {
@@ -49,15 +60,9 @@ a {
 .top--menu-ul {
    display: -webkit-box;
    display: -ms-flexbox;
-   display: flex;
-
-}
-
-/*
-.btnMenu {
    display: none;
+
 }
-*/
 
 /* menuFour */
 .menuFour {
@@ -156,4 +161,76 @@ a {
    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
    transform: rotate(-45deg);
    transition-delay: 100ms;
+}
+
+
+
+.top--section {
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-end;
+   max-width: 1170px;
+   margin: 0 auto;
+   background-color: #fafcfc;
+}
+
+.top--section img {
+   width: 100%;
+
+}
+
+.top--section-title {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+
+}
+
+.wrap-title {
+   display: flex;
+   flex-wrap: wrap;
+   border-left: 5px solid #18a3dd;
+}
+
+.section--tiile-sup {
+   font-family: 'Raleway', sans-serif;
+   font-size: 72px;
+   color: #333740;
+   font-weight: 900;
+   flex-basis: 100%;
+}
+
+.section--tiile-mid {
+   font-family: 'Raleway', sans-serif;
+   font-size: 24px;
+   color: #333740;
+   flex-basis: 100%;
+}
+
+.section--tiile-sub {
+   font-family: 'Lato', sans-serif;
+   font-size: 16px;
+   color: #7a7a7a;
+   flex-basis: 100%;
+}
+
+.section--tiile-btn {
+   color: #fff;
+   background-color: #18a3dd;
+   max-width: 180px;
+
+}
+
+.video--btn {}
+
+.video--btn:after {
+   content: '\ea42';
+   font-family: 'icomoon';
+   color: #18a3dd;
+
+}
+
+.block {
+   background-color: red;
+   height: 120px;
 }
