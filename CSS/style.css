@@ -168,11 +168,13 @@ a {
    display: flex;
    justify-content: center;
    align-items: flex-end;
+   flex-wrap: wrap;
    padding: 180px 0 60px 0;
 }
 
 .top--section img {
    max-width: 585px;
+   width: 100%;
 
 }
 
@@ -181,7 +183,7 @@ a {
    flex-wrap: wrap;
    align-items: center;
    margin-bottom: 127px;
-   margin-right: 137px;
+   margin-right: 130px;
    max-width: 450px;
 }
 
@@ -245,7 +247,221 @@ a {
    vertical-align: bottom;
 }
 
-.block {
-   background-color: red;
-   height: 120px;
+.block-sale {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   padding: 121px 0 141px;
+   max-height: 590px;
+   position: relative;
+}
+
+.wr--ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   background-color: #160e1f;
+   width: 100%;
+   min-height: 350px;
+}
+
+.block-sale img {
+   position: absolute;
+   top: 0;
+}
+
+.block-sale ul {
+   color: #fff;
+}
+
+.block-sale ul li:first-child {
+   border-left: 5px solid #18a3dd;
+   font-size: 72px;
+   font-weight: 700;
+   border-radius: 1px;
+   font-family: 'Lato', sans-serif;
+   color: #fff;
+   text-transform: uppercase;
+   line-height: 0.333;
+}
+
+.text-li {
+   font-family: 'Lato', sans-serif;
+   font-size: 16px;
+   text-transform: uppercase;
+   color: #18a3dd;
+   margin: 25px 0 13px;
+}
+
+.text--li-sub {
+   font-family: 'Lato', sans-serif;
+   font-size: 16px;
+   color: #fff;
+   text-transform: capitalize;
+}
+
+.block--up-offer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 77px;
+}
+
+.div--fetures {
+   font-size: 30px;
+   font-family: "Raleway";
+   text-transform: uppercase;
+   line-height: 0.733;
+   color: #333740;
+}
+
+.fetures {
+   font-size: 30px;
+   font-family: "Raleway";
+   font-weight: bold;
+   text-transform: uppercase;
+   border-right: 1px solid #18a3dd;
+   padding-right: 20px;
+   margin-right: 20px;
+}
+
+.fetures--title {
+   font-family: 'Lato', sans-serif;
+   font-weight: lighter;
+   font-size: 16px;
+   color: #83888f;
+   line-height: 3;
+}
+
+.block--sub-offer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.sub--offer-wr {
+   width: 360px;
+   max-width: auto;
+
+}
+
+.offer-wr {
+   margin-bottom: 80px;
+}
+
+.offer--text-left,
+.offer--text-right {
+   font-size: 20px;
+   font-family: "Raleway";
+   color: #333740;
+   font-weight: bold;
+   text-transform: uppercase;
+   line-height: 1.2;
+   margin-bottom: 17px;
+}
+
+.offer--text-left {
+   border-right: 5px solid #18a3dd;
+   text-align: end;
+   padding-right: 25px;
+}
+
+.offer--text-right {
+   border-left: 5px solid #18a3dd;
+   padding-left: 25px;
+}
+
+.text-title-sub {
+   font-size: 20px;
+   color: #5b5f64;
+}
+
+.offer-section-img {
+   margin: 0 90px;
+}
+
+.top--item-1 {
+   background-image: url(../img/top-item-1.jpg);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.top--item-2 {
+   background-image: url(../img/top-item-2.jpg);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.top--item-3 {
+   background-image: url(../img/top-item-3.jpg);
+   background-position: top center;
+   background-repeat: no-repeat;
+}
+
+.top--item-fon {
+   background-color: rgba(0, 0, 0, .55);
+   height: 100vh;
+}
+
+.slick-next {
+   position: absolute;
+   top: 50%;
+   right: 20px;
+   z-index: 15;
+   height: 55px;
+   width: 55px;
+   font-size: 0;
+   background-color: transparent;
+   -webkit-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   outline: none;
+   cursor: pointer;
+   border-radius: 15%;
+}
+
+.slick-next::before {
+   content: '\e901';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   font-family: 'icomoon';
+   font-size: 30px;
+   color: #fff;
+   border-radius: 50%;
+}
+
+.slick-prev {
+   position: absolute;
+   top: 50%;
+   left: 20px;
+   z-index: 15;
+   height: 55px;
+   width: 55px;
+   font-size: 0;
+   background-color: transparent;
+   -webkit-transform: translate(0, -50%);
+   transform: translate(0, -50%);
+   outline: none;
+   cursor: pointer;
+   border-radius: 15%;
+}
+
+.slick-prev::before {
+   content: '\e902';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   font-family: 'icomoon';
+   font-size: 30px;
+   color: #fff;
+   border-radius: 50%;
 }
